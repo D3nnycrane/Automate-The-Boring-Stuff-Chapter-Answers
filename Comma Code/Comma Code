@@ -1,0 +1,4 @@
+def listThings(wordlist):
+    if len(wordlist) == 1:
+        return wordlist[0]
+    return '{}, and {}'.format(', '.join(wordlist[:-1]), wordlist[-1])
