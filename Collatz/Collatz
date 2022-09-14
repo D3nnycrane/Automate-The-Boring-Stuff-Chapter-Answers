@@ -9,6 +9,9 @@ def collatz(number):
         print(result)
         return result
 
-n = input("Give me a number: ")
-while n != 1:
-    n = collatz(int(n))
+try:
+    n = input("Give me a number: ")
+    while n != 1:
+        n = collatz(int(n))
+except(ValueError):
+    print("Please enter a valid integer!")
